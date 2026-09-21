@@ -1,6 +1,6 @@
 # Stage 1 - Build Application
 
-FROM maven 
+FROM maven:3.9.6-eclipse-temurin-8 AS builder
 COPY . .
 RUN mvn clean install
 
